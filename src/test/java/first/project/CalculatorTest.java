@@ -16,7 +16,7 @@ class CalculatorTest {
    double result = Calculator.getSum(a, b);
 
 //then
-   Assertions.assertEquals(expectedSum, expectedSum);
+   Assertions.assertEquals(expectedSum, result);
    }
 
  @Test
