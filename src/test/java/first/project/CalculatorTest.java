@@ -58,4 +58,17 @@ class CalculatorTest {
   Assertions.assertEquals(expectedResult, result);
  }
 
+ @Test
+ void shouldResultCannotDivideByZero(){
+  //given
+  double a = 10;
+  double b = 0;
+
+  double result = 0;
+  //when
+  double expectedResult = Calculator.getDivide(a, b);
+//then
+  Assertions.assertEquals(expectedResult, result);
+ }
+
 }
