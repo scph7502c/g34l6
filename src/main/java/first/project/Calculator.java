@@ -2,8 +2,7 @@ package first.project;
 
 public class Calculator {
     public static void main(String[] args) {
-//        double sum = getSum(2.9555555555553, 5.3232);
-//        System.out.println(sum);
+
         System.out.println(getDivide(8, 0));
     }
 
