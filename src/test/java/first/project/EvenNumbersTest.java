@@ -9,10 +9,10 @@ public class EvenNumbersTest {
     void shouldCheckIfEven(){
 //given
     int number = 4;
-    String expected = "Liczba 4 jest parzysta";
+    boolean expected = true;
 
 //when
-    String result = EvenNumbers.checkIfEven(number);
+    boolean result = EvenNumbers.checkIfEven(number);
 
 //then
     Assertions.assertEquals(expected, result);
@@ -23,10 +23,10 @@ public class EvenNumbersTest {
     void shouldCheckIfNotEven(){
 //given
     int number = 5;
-    String expected = "Liczba 5 nie jest parzysta";
+    boolean expected = false;
 
 //when
-    String result = EvenNumbers.checkIfEven(number);
+    boolean result = EvenNumbers.checkIfEven(number);
 
 //then
     Assertions.assertEquals(expected, result);
