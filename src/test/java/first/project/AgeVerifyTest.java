@@ -8,25 +8,22 @@ public class AgeVerifyTest {
 @Test
     void shouldCheckIfNotAdult(){
 //given
-    int age = 16;
-    String expected = "Niepełnoletni";
-
+int age = 16;
+boolean expected = false;
 //when
-String result = AgeVerify.checkIfAdult(age);
+boolean result = AgeVerify.checkIfAdult(age);
 
-    Assertions.assertEquals(expected, result);
-    }
+  Assertions.assertEquals(expected, result);
+   }
 
-
-    @Test
-    void shouldCheckIfIsAdult(){
+@Test
+void shouldCheckIfIsAdult(){
 //given
-        int age = 19;
-        String expected = "Pełnoletni";
-
+int age = 19;
+boolean expected = true;
 //when
-        String result = AgeVerify.checkIfAdult(age);
+boolean result = AgeVerify.checkIfAdult(age);
 
-        Assertions.assertEquals(expected, result);
-    }
+  Assertions.assertEquals(expected, result);
+   }
 }
