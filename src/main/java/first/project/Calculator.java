@@ -28,8 +28,4 @@ public class Calculator {
         return divide;
     }
 
-
-
-
-
 }
