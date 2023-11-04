@@ -11,6 +11,7 @@ public class Calculator {
 
         return Math.round((a + b) * 100.0) / 100.0;
     }
+
     static double getSubstraction(double a, double b) {
 
         return Math.round((a - b) * 100.0) / 100.0;
@@ -28,9 +29,6 @@ public class Calculator {
         } else System.out.println("You can't divide by 0!");
         return divide;
     }
-
-
-
 
 
 }

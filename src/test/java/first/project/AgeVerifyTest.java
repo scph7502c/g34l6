@@ -5,25 +5,25 @@ import org.junit.jupiter.api.Test;
 
 public class AgeVerifyTest {
 
-@Test
-    void shouldCheckIfNotAdult(){
+    @Test
+    void shouldCheckIfNotAdult() {
 //given
-int age = 16;
-boolean expected = false;
+        int age = 16;
+        boolean expected = false;
 //when
-boolean result = AgeVerify.checkIfAdult(age);
+        boolean result = AgeVerify.checkIfAdult(age);
 
-  Assertions.assertEquals(expected, result);
-   }
+        Assertions.assertEquals(expected, result);
+    }
 
-@Test
-void shouldCheckIfIsAdult(){
+    @Test
+    void shouldCheckIfIsAdult() {
 //given
-int age = 19;
-boolean expected = true;
+        int age = 19;
+        boolean expected = true;
 //when
-boolean result = AgeVerify.checkIfAdult(age);
+        boolean result = AgeVerify.checkIfAdult(age);
 
-  Assertions.assertEquals(expected, result);
-   }
+        Assertions.assertEquals(expected, result);
+    }
 }
